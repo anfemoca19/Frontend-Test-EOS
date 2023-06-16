@@ -1,23 +1,18 @@
 
 import './App.css';
-import Navbar from './components/Navbar/Navbar';
+import Header from './components/Header/Header';
+import Layout from './components/Layout/Layout';
 
 
 function App() {
   return (
-    <div className="App">
-      <header>
-        <Navbar/>
-      </header>
-      <main>
-        <section>
 
-        </section>
-        <section>
-          
-        </section>
-      </main>
-    </div>
+      <div className="App">
+      <Header/>
+          <Layout/>
+      
+      </div>
+    
   );
 }
 

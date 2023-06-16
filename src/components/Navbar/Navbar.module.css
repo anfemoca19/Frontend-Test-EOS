@@ -1,31 +1,77 @@
 .nav-style {
-  position: absolute;
-  width: 1920px;
   height: 183px;
   left: 0px;
   top: 0px;
 }
 
-.container-main {
-  position: absolute;
-  width: 1920px;
-  height: 120px;
-  left: calc(50% - 1920px / 2);
-  top: 0px;
+.container-grid {
+  display: grid;
+  grid-template-columns: 150px 800px 400px;
   background: #24292e;
+  height: 120px;
+  align-items: center;
+  grid-gap: 72px;
+}
+
+.container-menu {
+  margin-left: 20px;
+  display: flex;
 }
 
 .container-elements {
-  position: absolute;
-  width: 828px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 752px;
   height: 56px;
-  left: 290px;
-  top: 32px;
+  gap: 20px;
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.container-notification {
+  gap: 10px;
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+.style-chat {
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.style-gift {
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+.container-users {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.style-separator {
+  width: 1px;
+  height: 56px;
+  background-color: #24292e;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.container-profile {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #ffffff;
 }
 
 .container-dashboard {
-  position: absolute;
-  width: 1920px;
+  display: flex;
+  align-items: center;
   height: 63px;
   left: 0px;
   top: 120px;
@@ -34,4 +80,5 @@
 
 .style-font {
   color: #13b497;
+  margin-left: 60px;
 }

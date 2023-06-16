@@ -1,11 +1,24 @@
 .style-btn {
   width: 56px;
   height: 56px;
-  left: calc(50% - 56px / 2 + 130px);
-  top: 32px;
   border-radius: 12px;
+}
+
+.style-icon-pinion {
+  height: 21px;
+  width: 21px;
 }
 
 .style-green {
   background: #13b497;
+  border: none;
+}
+
+.style-grey {
+  background: #2f363d;
+  border: none;
+}
+
+.style-user {
+  background-color: #c4c4c4;
 }

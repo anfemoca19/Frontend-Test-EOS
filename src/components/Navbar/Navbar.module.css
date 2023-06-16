@@ -1,0 +1,37 @@
+.nav-style {
+  position: absolute;
+  width: 1920px;
+  height: 183px;
+  left: 0px;
+  top: 0px;
+}
+
+.container-main {
+  position: absolute;
+  width: 1920px;
+  height: 120px;
+  left: calc(50% - 1920px / 2);
+  top: 0px;
+  background: #24292e;
+}
+
+.container-elements {
+  position: absolute;
+  width: 828px;
+  height: 56px;
+  left: 290px;
+  top: 32px;
+}
+
+.container-dashboard {
+  position: absolute;
+  width: 1920px;
+  height: 63px;
+  left: 0px;
+  top: 120px;
+  background-color: #2d3339;
+}
+
+.style-font {
+  color: #13b497;
+}

@@ -6,9 +6,10 @@
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(5, auto);
 
-  /* grid-template-areas:
-      "contenido contenido sidebar"
-      "widget-1 widget-2 sidebar" */
+  grid-template-areas:
+    "styles-main styles-main sidebar sidebar"
+    "tiket-sold soled sidebar sidebar"
+    "monthly this-week sidebar sidebar";
 }
 
 .styles-main,
@@ -22,10 +23,39 @@
 }
 
 .styles-main {
-  grid-column: span 2;
+  grid-area: styles-main;
 }
 
 .styles-sidebar {
-  grid-column: span 2;
-  grid-row: span 3;
+  grid-area: sidebar;
+}
+
+.tiket-sold {
+  grid-area: tiket-sold;
+}
+
+.soled {
+  grid-area: soled;
+}
+
+.monthly {
+  grid-area: monthly;
+}
+
+.the-week {
+  grid-area: the-week;
+}
+
+@media screen and (max-width: 768px) {
+  .monthly {
+    display: none;
+  }
+  .container {
+    grid-template-areas:
+      "styles-main styles-main styles-main styles-main"
+      "tiket-sold tiket-sold tiket-sold tiket-sold"
+      "soled soled soled soled"
+      "this-week this-week this-week this-week"
+      "sidebar sidebar sidebar sidebar ";
+  }
 }

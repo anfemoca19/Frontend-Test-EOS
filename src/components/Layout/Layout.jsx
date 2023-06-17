@@ -29,7 +29,11 @@ const Layout = ({ navBar, children, sideBar }) => {
         <div></div>
       </main>
       <aside className={clsx(styles["styles-sidebar"])}>
-        <h3>SIDEBAR</h3>
+        <div className={clsx(styles["grap-sales"])}></div>
+        <div>
+          <span>Event Galleries</span>
+          <div className={clsx(styles["container-galleries"])}></div>
+        </div>
       </aside>
       <div className={clsx(styles["tiket-sold"])}>
         <h3>WIDGET 1</h3>

@@ -12,7 +12,6 @@
     "monthly this-week sidebar sidebar";
 }
 
-.styles-main,
 .tiket-sold,
 .soled,
 .the-week,
@@ -20,14 +19,6 @@
 .this-week {
   background-color: #272e35;
   border-radius: 17px;
-}
-
-.styles-main {
-  grid-area: styles-main;
-}
-
-.styles-sidebar {
-  grid-area: sidebar;
 }
 
 .tiket-sold {

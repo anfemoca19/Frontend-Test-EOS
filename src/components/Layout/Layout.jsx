@@ -1,40 +1,13 @@
 import clsx from "clsx";
 import styles from "./Layout.module.css";
+import Main from "../Main/Main";
+import Aside from "../Aside/Aside";
 
 const Layout = ({ navBar, children, sideBar }) => {
   return (
     <div className={clsx(styles["container"])}>
-      {/* <main className={clsx(styles["container-main"])}>
-          <div>
-            <div>
-              <span>Uno</span>
-            </div>
-            <div>dos</div>
-          </div>
-        </main>
-
-        <aside className={clsx(styles["container-sidebar"])}>
-          <div className={clsx(styles["grap-sales"])}></div>
-          <div>
-            <span>Event Galleries</span>
-            <div className={clsx(styles["container-galleries"])}></div>
-          </div>
-        </aside> */}
-      <main className={clsx(styles["styles-main"])}>
-        <div>
-          <span>Best Selling</span>
-          <input type="text" />
-          <div></div>
-        </div>
-        <div></div>
-      </main>
-      <aside className={clsx(styles["styles-sidebar"])}>
-        <div className={clsx(styles["grap-sales"])}></div>
-        <div>
-          <span>Event Galleries</span>
-          <div className={clsx(styles["container-galleries"])}></div>
-        </div>
-      </aside>
+      <Main />
+      <Aside />
       <div className={clsx(styles["tiket-sold"])}>
         <h3>WIDGET 1</h3>
       </div>

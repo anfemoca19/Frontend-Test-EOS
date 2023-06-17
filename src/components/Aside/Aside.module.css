@@ -1,0 +1,7 @@
+.styles-sidebar {
+  grid-area: sidebar;
+}
+
+.styles-main {
+  grid-area: styles-main;
+}

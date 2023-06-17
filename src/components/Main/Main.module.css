@@ -1,0 +1,8 @@
+.styles-main {
+  background-color: #272e35;
+  border-radius: 17px;
+}
+
+.styles-main {
+  grid-area: styles-main;
+}

@@ -1,8 +1,56 @@
 .styles-main {
   background-color: #272e35;
   border-radius: 17px;
+  padding: 20px;
 }
 
 .styles-main {
   grid-area: styles-main;
+}
+
+.best-selling {
+  display: flex;
+  flex-direction: column;
+  gap: 31px;
+}
+
+.container-header-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.style-best-text {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24.5154px;
+  line-height: 37px;
+  /* identical to box height */
+
+  color: #ffffff;
+}
+
+.container-week-text {
+  display: flex;
+  align-items: center;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14.7092px;
+  line-height: 22px;
+  /* identical to box height */
+  text-align: right;
+  gap: 5px;
+  color: #b7b7b7;
+}
+
+.container-chart-best {
+  display: flex;
+  flex-direction: row;
+}
+
+.style-chart-best-circle {
+  width: 448px;
+  height: 433px;
 }

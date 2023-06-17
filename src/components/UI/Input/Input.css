@@ -34,3 +34,18 @@
   color: #a4a4a4;
   margin-right: 10px;
 }
+
+.container-secundary {
+  height: 61.29px;
+  left: calc(50% - 807.78px / 2 - 456.89px);
+  top: 330.51px;
+
+  background: #20262d;
+  box-shadow: 0px 14.7092px 28.1927px rgba(62, 73, 84, 0.04);
+  border-radius: 17.1608px;
+}
+
+.input-secundary {
+  background-color: #1c2126;
+  border: none;
+}

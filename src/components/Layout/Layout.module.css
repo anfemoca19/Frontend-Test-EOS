@@ -8,29 +8,75 @@
 
   grid-template-areas:
     "styles-main styles-main sidebar sidebar"
-    "tiket-sold soled sidebar sidebar"
+    "container-tiket-sold soled sidebar sidebar"
     "monthly this-week sidebar sidebar";
 }
 
-.tiket-sold,
+.container-tiket-sold,
 .soled,
 .the-week,
 .monthly,
 .this-week {
-  background-color: #272e35;
+  background-color: #2f363d;
   border-radius: 17px;
 }
 
+.container-tiket-sold {
+  grid-area: container-tiket-sold;
+  display: flex;
+  padding: 15px;
+  flex-direction: column;
+}
+
+.container-header-tiket {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .tiket-sold {
-  grid-area: tiket-sold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.style-number {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 19.6123px;
+  line-height: 29px;
+  color: #ffffff;
+}
+
+.container-daily {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.style-text-grey {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14.7092px;
+  line-height: 22px;
+
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .soled {
   grid-area: soled;
+  display: flex;
+  padding: 15px;
+  flex-direction: column;
 }
 
 .monthly {
   grid-area: monthly;
+  display: flex;
+  padding: 15px;
+  flex-direction: column;
 }
 
 .the-week {
@@ -44,7 +90,7 @@
   .container {
     grid-template-areas:
       "styles-main styles-main styles-main styles-main"
-      "tiket-sold tiket-sold tiket-sold tiket-sold"
+      "container-tiket-sold container-tiket-sold container-tiket-sold container-tiket-sold"
       "soled soled soled soled"
       "this-week this-week this-week this-week"
       "sidebar sidebar sidebar sidebar ";

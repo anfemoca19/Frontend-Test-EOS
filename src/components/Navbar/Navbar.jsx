@@ -22,7 +22,11 @@ export default function Navbar() {
             <img className="styles-logo" src={logo} alt="logo-test" />
           </div>
           <div className={clsx(styles["container-elements"])}>
-            <Input />
+            <Input
+              className="style-input"
+              placeholder="Search here"
+              container="container-search"
+            />
             <Button
               className={clsx("style-green")}
               icon={pinion}

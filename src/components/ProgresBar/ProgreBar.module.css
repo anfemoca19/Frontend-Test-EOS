@@ -1,0 +1,19 @@
+.progress {
+  background-color: #ccd;
+  width: 400px;
+  height: 12.31px;
+  border-radius: 15px;
+  color: white;
+}
+
+.progress-done {
+  background: #13b497;
+  height: 100%;
+  width: 79%;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-origin: center left;
+  box-shadow: 0px 0px 19.6123px rgba(19, 180, 151, 0.56);
+}

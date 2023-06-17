@@ -1,17 +1,11 @@
 import styles from "../Button/Button.module.css";
 import clsx from "clsx";
 
-export default function Button(prop) {
+export default function Button({ className, icon, alt, id }) {
   return (
     <>
-      <button
-        className={clsx(styles["style-btn"], styles[`${prop.className}`])}
-      >
-        <img
-          className={clsx(styles["style-icon-pinion"])}
-          src={prop.icon}
-          alt={prop.alt}
-        />
+      <button className={clsx(styles["style-btn"], className)} id={id}>
+        <img className={clsx(styles["style-icon"])} src={icon} alt={alt} />
       </button>
     </>
   );

@@ -26,6 +26,7 @@
   display: flex;
   padding: 15px;
   flex-direction: column;
+  gap: 50px;
 }
 
 .container-header-tiket {

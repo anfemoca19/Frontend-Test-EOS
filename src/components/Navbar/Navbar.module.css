@@ -1,21 +1,41 @@
-.nav-style {
-  height: 183px;
-  left: 0px;
-  top: 0px;
-}
-
 .container-grid {
   display: grid;
-  grid-template-columns: 150px 800px 400px;
-  background: #24292e;
+  /* grid-template-columns: 150px 800px 400px; */
+  /* width: 90%; */
+  grid-gap: 50px;
   height: 120px;
   align-items: center;
-  grid-gap: 72px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "container-menu  container-elements  container-notification";
+  grid-template-rows: repeat(1, auto);
+
+  @media (max-width: 768px) {
+    height: 73px;
+    .container {
+      grid-template-areas:
+        "styles-main styles-main styles-main styles-main"
+        "container-tiket-sold container-tiket-sold container-tiket-sold container-tiket-sold"
+        "soled soled soled soled"
+        "this-week this-week this-week this-week"
+        "sidebar sidebar sidebar sidebar ";
+    }
+  }
 }
 
 .container-menu {
   margin-left: 20px;
   display: flex;
+  grid-area: container-menu;
+  @media (max-width: 768px) {
+    align-items: center;
+  }
+}
+
+.styles-logo {
+  @media (max-width: 768px) {
+    width: 45px;
+    height: 34px;
+  }
 }
 
 .container-elements {
@@ -32,18 +52,18 @@
 }
 
 .container-notification {
-  gap: 10px;
   display: flex;
   gap: 10px;
-  width: 100%;
+  margin-right: 50px;
 }
-.style-chat {
+
+#icon-chat {
   @media (max-width: 768px) {
     display: none;
   }
 }
 
-.style-gift {
+#icon-gift {
   @media (max-width: 768px) {
     display: none;
   }
@@ -60,6 +80,9 @@
   background-color: #24292e;
   margin-left: 16px;
   margin-right: 16px;
+  @media (max-width: 768px) {
+    display: none;
+  }
 }
 
 .container-profile {
@@ -69,6 +92,12 @@
   color: #ffffff;
 }
 
+.style-name-user {
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
 .container-dashboard {
   display: flex;
   align-items: center;
@@ -76,6 +105,9 @@
   left: 0px;
   top: 120px;
   background-color: #2d3339;
+  @media (max-width: 768px) {
+    display: none;
+  }
 }
 
 .style-font {

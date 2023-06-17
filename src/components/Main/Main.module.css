@@ -48,9 +48,10 @@
 .container-chart-best {
   display: flex;
   flex-direction: row;
+  gap: 5px;
 }
 
 .style-chart-best-circle {
-  width: 448px;
-  height: 433px;
+  width: 350px;
+  height: 350px;
 }

@@ -5,6 +5,7 @@ import Aside from "../Aside/Aside";
 import arrow from "../../images/arrow.png";
 import ProgreBar from "../ProgresBar/ProgresBar";
 import chartColors from "../../images/chartColor.png";
+import mask from "../../images/Mask Group.png";
 
 const Layout = ({ navBar, children, sideBar }) => {
   return (
@@ -35,6 +36,7 @@ const Layout = ({ navBar, children, sideBar }) => {
             <img src={arrow} alt="" />
           </div>
         </div>
+        <div>{/* <img src={mask} alt="" /> */}</div>
       </div>
       <div className={clsx(styles.monthly)}>
         <div className={clsx(styles["container-header-tiket"])}>

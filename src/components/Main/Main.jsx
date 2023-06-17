@@ -28,8 +28,12 @@ export default function Main() {
           </div>
         </div>
         <div className={clsx(styles["container-chart-best"])}>
-          <img className="style-chart-best-circle" src={cicleChart} alt="" />
-          <GrapBars />
+          <img
+            className={clsx(styles["style-chart-best-circle"])}
+            src={cicleChart}
+            alt=""
+          />
+          {/* <GrapBars /> */}
         </div>
       </main>
     </>

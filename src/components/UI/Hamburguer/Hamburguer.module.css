@@ -5,6 +5,10 @@
   position: relative;
   cursor: pointer;
   display: inline-block;
+  @media (max-width: 768px) {
+    width: 35px;
+    height: 28px;
+  }
 }
 
 .container-menu-hamburguer span {

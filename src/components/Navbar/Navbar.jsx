@@ -19,7 +19,11 @@ export default function Navbar() {
         <div className={clsx(styles["container-grid"])}>
           <div className={clsx(styles["container-menu"])}>
             <Hamburguer />
-            <img className="styles-logo" src={logo} alt="logo-test" />
+            <img
+              className={clsx(styles["styles-logo"])}
+              src={logo}
+              alt="logo-test"
+            />
           </div>
           <div className={clsx(styles["container-elements"])}>
             <Input
@@ -28,31 +32,31 @@ export default function Navbar() {
               container="container-search"
             />
             <Button
-              className={clsx("style-green")}
+              className={clsx(styles["style-green"])}
               icon={pinion}
               alt="icon-pinion"
             />
           </div>
           <div className={clsx(styles["container-notification"])}>
             <Button
-              className={clsx("style-grey", styles["style-campain"])}
+              className={clsx(styles["style-grey"])}
               icon={campanaign}
-              alt="icon-campanaign"
+              alt="icon-campaign"
             />
             <Button
-              className={clsx("style-grey", styles["style-chat"])}
+              className={clsx(styles["style-grey"])}
               icon={chat}
               alt="icon-chat"
             />
             <Button
-              className={clsx("style-grey", styles["style-gift"])}
+              className={clsx("style-grey")}
               icon={gift}
               lat="icon-gift"
             />
             <span className={clsx(styles["style-separator"])}></span>
             <Picture className={clsx("style-user")} />
             <div className={clsx(styles["container-profile"])}>
-              <span>David</span>
+              <span className={clsx(styles["style-name-user"])}>David</span>
               <img src={arrow} alt="" />
             </div>
           </div>

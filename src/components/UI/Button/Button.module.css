@@ -33,13 +33,13 @@
   background-color: #c4c4c4;
 }
 
-.icon-chat {
+#icon-chat {
   @media (max-width: 768px) {
     display: none;
   }
 }
 
-.icon-gift {
+#icon-gift {
   @media (max-width: 768px) {
     display: none;
   }

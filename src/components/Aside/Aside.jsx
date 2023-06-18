@@ -21,7 +21,7 @@ export default function Aside() {
             <span className={clsx(styles["style-number"])}>94%</span>
           </div>
           <div>
-            <img className={clsx(styles["img-Bars"])} src={doubleBars} alt="" />
+            <img className={clsx(styles["img-bars"])} src={doubleBars} alt="" />
             <img
               className={clsx(styles["img-numbers"])}
               src={numbersBars}

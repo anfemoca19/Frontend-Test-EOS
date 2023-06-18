@@ -33,26 +33,29 @@ export default function Navbar() {
               classIcon="style-icon-search"
             />
             <Button
-              className={clsx(styles["style-green"])}
+              className={clsx("style-green")}
               icon={pinion}
               alt="icon-pinion"
             />
           </div>
           <div className={clsx(styles["container-notification"])}>
             <Button
-              className={clsx(styles["style-grey"], styles["icon-campaign"])}
+              className={clsx("style-grey")}
               icon={campanaign}
               alt="icon-campaign"
+              id="icon-campaign"
             />
             <Button
-              className={clsx(styles["style-grey"], styles["icon-chat"])}
+              className={clsx("style-grey")}
               icon={chat}
               alt="icon-chat"
+              id="icon-chat"
             />
             <Button
-              className={clsx(styles["style-grey"], styles["icon-gift"])}
+              className={clsx("style-grey")}
               icon={gift}
               lat="icon-gift"
+              id="icon-gift"
             />
             <span className={clsx(styles["style-separator"])}></span>
             <Picture className={clsx("style-user")} />

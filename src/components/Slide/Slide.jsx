@@ -21,7 +21,7 @@ export default function Slide() {
       >
         <Suspense fallback={<div>Loading...</div>}>
           {data?.map((item) => (
-            <SwiperSlide>{item.url}</SwiperSlide>
+            <SwiperSlide key={item.id}>{item.url}</SwiperSlide>
           ))}
         </Suspense>
       </Swiper>

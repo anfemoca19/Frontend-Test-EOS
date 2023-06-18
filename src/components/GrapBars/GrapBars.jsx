@@ -1,67 +1,39 @@
-import styles from "./GrapBars.module.css";
-import { Bar } from "react-chartjs-2";
 import {
-  Chart as ChartJS,
-  CategoryScale,
-  LinearScale,
-  PointElement,
-  BarElement,
-  Title,
-  Tooltip,
-  Legend,
-  Filler,
-} from "chart.js";
+  BarChart,
+  CartesianGrid,
+  ResponsiveContainer,
+  XAxis,
+  YAxis,
+} from "recharts";
 
-ChartJS.register(
-  CategoryScale,
-  LinearScale,
-  PointElement,
-  BarElement,
-  Title,
-  Tooltip,
-  Legend,
-  Filler
-);
-
-let beneficios = [72, 56, 20, 36, 80, 40, 30];
-let meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo"];
-
-let misOptions = {
-  responsive: true,
-  animation: false,
-  plugins: {
-    legend: {
-      display: false,
-    },
-  },
-  scales: {
-    y: {
-      min: -25,
-      max: 100,
-    },
-    x: {
-      ticks: {
-        color: "rgba(0,220,195",
-      },
-    },
-  },
-};
-
-let miData = {
-  labels: meses,
-  datasets: [
-    {
-      label: "Beneficios",
-      data: beneficios,
-      backgroundColor: "rgba(0,220,195,0.5)",
-    },
-  ],
-};
+import { Bar } from "react-chartjs-2";
+import { Legend, Tooltip } from "chart.js";
 
 export default function GrapBars() {
+  const data = [{}];
   return (
     <>
-      <Bar data={miData} options={misOptions} />
+      <ResponsiveContainer width="100%" height="100%">
+        <BarChart
+          width={500}
+          height={300}
+          data={data}
+          margin={{
+            top: 5,
+            right: 30,
+            left: 20,
+            bottom: 5,
+          }}
+        >
+          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis dataKey="name" />
+          <YAxis />
+          <Tooltip />
+          <Legend />
+          <Bar dataKey="pv" fill="#8884d8" />
+          <Bar dataKey="uv" fill="#82ca9d" />
+        </BarChart>
+      </ResponsiveContainer>
     </>
   );
 }

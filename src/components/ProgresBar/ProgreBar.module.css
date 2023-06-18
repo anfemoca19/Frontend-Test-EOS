@@ -1,9 +1,13 @@
 .progress {
   background-color: #ccd;
-  width: 350px;
+  width: 100%;
   height: 12.31px;
   border-radius: 15px;
   color: white;
+  @media (max-width: 768px) {
+    width: 100%;
+    height: 12.31px;
+  }
 }
 
 .progress-done {

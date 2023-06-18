@@ -3,7 +3,8 @@ import styles from "./Main.module.css";
 import arrow from "../../images/arrow.png";
 import Input from "../UI/Input/Input";
 import cicleChart from "../../images/circleChartBest.png";
-import GrapBars from "../GrapBars/GrapBars";
+import bar from "../../images/barChart.png";
+import days from "../../images/day.png";
 
 export default function Main() {
   return (
@@ -16,14 +17,20 @@ export default function Main() {
             </span>
             <div className={clsx(styles["container-week-text"])}>
               <span>This Week</span>
-              <img src={arrow} alt="" />
+              <img
+                className={clsx(styles["style-arrow-icon"])}
+                src={arrow}
+                alt="icon-arrow"
+              />
             </div>
           </div>
           <div>
             <Input
-              className={clsx(styles["input-secundary"])}
+              className="input-secundary"
               container="container-secundary"
               placeholder="Tuesday"
+              classIcon="style-icon-secundary"
+              text="215,523 pcs"
             />
           </div>
         </div>
@@ -33,7 +40,10 @@ export default function Main() {
             src={cicleChart}
             alt=""
           />
-          {/* <GrapBars /> */}
+          <div className={clsx(styles["container-bars-month"])}>
+            <img className={clsx(styles["img-bars"])} src={bar} alt="" />
+            <img className={clsx(styles["img-days"])} src={days} alt="" />
+          </div>
         </div>
       </main>
     </>

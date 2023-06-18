@@ -4,8 +4,10 @@ import Main from "../Main/Main";
 import Aside from "../Aside/Aside";
 import arrow from "../../images/arrow.png";
 import ProgreBar from "../ProgresBar/ProgresBar";
-import chartColors from "../../images/chartColor.png";
 import mask from "../../images/Mask Group.png";
+import monthlyChart from "../../images/monthlyChart.png";
+import pieChart from "../../images/pieChart.png";
+import legend from "../../images/legend.png";
 
 const Layout = ({ navBar, children, sideBar }) => {
   return (
@@ -36,7 +38,9 @@ const Layout = ({ navBar, children, sideBar }) => {
             <img src={arrow} alt="" />
           </div>
         </div>
-        <div>{/* <img src={mask} alt="" /> */}</div>
+        <div>
+          <img className={clsx(styles["img-line-chart"])} src={mask} alt="" />
+        </div>
       </div>
       <div className={clsx(styles.monthly)}>
         <div className={clsx(styles["container-header-tiket"])}>
@@ -49,9 +53,23 @@ const Layout = ({ navBar, children, sideBar }) => {
             <img src={arrow} alt="" />
           </div>
         </div>
+        <img
+          className={clsx(styles["img-monthly"])}
+          src={monthlyChart}
+          alt="chart"
+        />
       </div>
       <div className={clsx(styles["this-week"])}>
-        {/* <img src={chartColors} alt="" /> */}
+        <div className={clsx(styles["container-pie"])}>
+          <img className={clsx(styles["styles-pie"])} src={pieChart} alt="" />
+          <div className={clsx(styles["container-elements-tiket"])}>
+            <div className={clsx(styles["container-daily"])}>
+              <span className={clsx(styles["style-text-grey"])}>This Week</span>
+              <img src={arrow} alt="" />
+            </div>
+            <img className={clsx(styles["img-tiket"])} src={legend} alt="" />
+          </div>
+        </div>
       </div>
     </div>
   );

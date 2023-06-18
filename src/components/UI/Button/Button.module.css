@@ -39,7 +39,7 @@
   }
 }
 
-#icon-gift {
+.icon-gift {
   @media (max-width: 768px) {
     display: none;
   }

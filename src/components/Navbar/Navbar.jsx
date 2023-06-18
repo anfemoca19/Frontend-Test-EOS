@@ -30,6 +30,7 @@ export default function Navbar() {
               className="style-input"
               placeholder="Search here"
               container="container-search"
+              classIcon="style-icon-search"
             />
             <Button
               className={clsx(styles["style-green"])}
@@ -39,17 +40,17 @@ export default function Navbar() {
           </div>
           <div className={clsx(styles["container-notification"])}>
             <Button
-              className={clsx(styles["style-grey"])}
+              className={clsx(styles["style-grey"], styles["icon-campaign"])}
               icon={campanaign}
               alt="icon-campaign"
             />
             <Button
-              className={clsx(styles["style-grey"])}
+              className={clsx(styles["style-grey"], styles["icon-chat"])}
               icon={chat}
               alt="icon-chat"
             />
             <Button
-              className={clsx("style-grey")}
+              className={clsx(styles["style-grey"], styles["icon-gift"])}
               icon={gift}
               lat="icon-gift"
             />

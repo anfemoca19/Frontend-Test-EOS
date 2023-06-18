@@ -14,7 +14,7 @@
 
 .container-tiket-sold,
 .soled,
-.the-week,
+.this-week,
 .monthly,
 .this-week {
   background-color: #2f363d;
@@ -42,7 +42,7 @@
 }
 
 .style-number {
-  font-family: "Poppins";
+  /*font-family: "Poppins"*/
   font-style: normal;
   font-weight: 600;
   font-size: 19.6123px;
@@ -54,10 +54,11 @@
   display: flex;
   gap: 5px;
   align-items: center;
+  margin-left: 70px;
 }
 
 .style-text-grey {
-  font-family: "Poppins";
+  /*font-family: "Poppins"*/
   font-style: normal;
   font-weight: 300;
   font-size: 14.7092px;
@@ -80,8 +81,52 @@
   flex-direction: column;
 }
 
-.the-week {
-  grid-area: the-week;
+.styles-chart-color {
+  width: 100%;
+}
+.img-line-chart {
+  width: 100%;
+  height: 100px;
+}
+.img-monthly {
+  width: 100%;
+  height: 100px;
+}
+
+.this-week {
+  grid-area: this-week;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 15px;
+}
+
+.container-pie {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  gap: 25px;
+}
+
+.container-elements-tiket {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.styles-pie {
+  height: 90px;
+  @media (max-width: 768px) {
+    height: 120px;
+  }
+}
+
+.img-tiket {
+  width: 100%;
 }
 
 @media screen and (max-width: 768px) {
